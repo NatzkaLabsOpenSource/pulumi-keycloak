@@ -3,7 +3,7 @@ name: release-natzkalabs
 on:
   pull_request:
     branches:
-      - use-natzkalabs-tf-provider
+      - master
 
 permissions:
   contents: write
