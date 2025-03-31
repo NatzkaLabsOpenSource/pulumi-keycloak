@@ -105,7 +105,6 @@ jobs:
           export VERSION=$(echo -n "${{ env.NATZKALABS_PROVIDER_VERSION }}" | cut -c '2-')
           sed -i.bak -e "s/\${VERSION}/$VERSION/g" "${{github.workspace}}/sdk/nodejs/package.json"
           cp -f ${{github.workspace}}/sdk/nodejs/package.json ${{github.workspace}}/sdk/nodejs/bin/
-          rm "${{github.workspace}}/sdk/nodejs/bin/package.json.bak"
           
       - if: ${{ matrix.language == 'nodejs' }}
         uses: JS-DevTools/npm-publish@v3
