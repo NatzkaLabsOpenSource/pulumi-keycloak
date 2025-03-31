@@ -102,14 +102,6 @@ jobs:
 
       - name: Check worktree clean
         run: |
-          git update-index -q --refresh
-          if ! git diff-files --quiet; then
-              >&2 echo "error: working tree is not clean, aborting!"
-              git status
-              git diff
-              # exit 1
-          fi
-          
           export VERSION=$(echo -n "${{ env.NATZKALABS_PROVIDER_VERSION }}" | cut -c '2-')
           sed -i.bak -e "s/\${VERSION}/$VERSION/g" "${{github.workspace}}/sdk/nodejs/bin/package.json"
           rm "${{github.workspace}}/sdk/nodejs/bin/package.json.bak"
