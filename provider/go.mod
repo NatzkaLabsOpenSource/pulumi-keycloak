@@ -1,4 +1,4 @@
-module github.com/pulumi/pulumi-keycloak/provider/v6
+module github.com/NatzkaLabsOpenSource/pulumi-keycloak/provider/v6
 
 go 1.22.3
 
