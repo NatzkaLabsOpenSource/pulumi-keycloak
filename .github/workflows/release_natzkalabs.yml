@@ -14,7 +14,7 @@ env:
   NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
   NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
   NPM_REGISTRY_URL: https://registry.npmjs.org
-  NATZKALABS_PROVIDER_VERSION: v1.0.0
+  NATZKALABS_PROVIDER_VERSION: v0.0.1
 
 jobs:
 
@@ -97,7 +97,7 @@ jobs:
 
       - name: Build SDK
         run: |
-          export PROVIDER_VERSION=$(echo -n "${{ github.ref_name }}" | cut -c '2-')
+          export PROVIDER_VERSION=$(echo -n "${{ env.NATZKALABS_PROVIDER_VERSION }}" | cut -c '2-')
           make build_${{ matrix.language }}
 
       - name: Check worktree clean
