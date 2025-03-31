@@ -1,5 +1,5 @@
 {
-    "name": "@natzka-oss/keycloak",
+    "name": "@natzka-oss/pulumi-keycloak",
     "version": "${VERSION}",
     "description": "A Pulumi package for creating and managing keycloak cloud resources.",
     "keywords": [
@@ -22,7 +22,7 @@
     },
     "pulumi": {
         "resource": true,
-        "name": "natzkalabs-keycloak",
+        "name": "keycloak",
         "server": "github://api.github.com/NatzkaLabsOpenSource/pulumi-keycloak"
     }
 }
