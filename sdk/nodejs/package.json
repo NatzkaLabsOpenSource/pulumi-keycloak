@@ -7,7 +7,10 @@
         "keycloak"
     ],
     "homepage": "https://pulumi.io",
-    "repository": "https://github.com/NatzkaLabsOpenSource/pulumi-keycloak",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/NatzkaLabsOpenSource/pulumi-keycloak.git"
+    },
     "license": "Apache-2.0",
     "scripts": {
         "build": "tsc"
@@ -19,10 +22,5 @@
         "@types/mime": "^2.0.0",
         "@types/node": "^10.0.0",
         "typescript": "^4.3.5"
-    },
-    "pulumi": {
-        "resource": true,
-        "name": "keycloak",
-        "server": "github://api.github.com/NatzkaLabsOpenSource/pulumi-keycloak"
     }
 }
