@@ -153,6 +153,9 @@ func Provider() tfbridge.ProviderInfo {
 			"keycloak_openid_client_permissions": {
 				Docs: &tfbridge.DocInfo{AllowMissing: true},
 			},
+			"keycloak_realm_client_policy_profile_policy": {
+				Docs: &tfbridge.DocInfo{AllowMissing: true},
+			},
 			"keycloak_openid_audience_resolve_protocol_mapper": {
 				Docs: &tfbridge.DocInfo{Source: "openid_audience_resolve_protocol_mapper.md"},
 			},
