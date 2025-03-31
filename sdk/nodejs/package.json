@@ -22,7 +22,7 @@
     },
     "pulumi": {
         "resource": true,
-        "name": "keycloak",
+        "name": "natzkalabs-keycloak",
         "server": "github://api.github.com/NatzkaLabsOpenSource/pulumi-keycloak"
     }
 }
