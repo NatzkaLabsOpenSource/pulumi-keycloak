@@ -1,13 +1,13 @@
 {
-    "name": "@pulumi/keycloak",
-    "version": "6.0.0-alpha.0+dev",
+    "name": "@natzka-oss/pulumi-keycloak",
+    "version": "${VERSION}",
     "description": "A Pulumi package for creating and managing keycloak cloud resources.",
     "keywords": [
         "pulumi",
         "keycloak"
     ],
     "homepage": "https://pulumi.io",
-    "repository": "https://github.com/pulumi/pulumi-keycloak",
+    "repository": "https://github.com/NatzkaLabsOpenSource/pulumi-keycloak",
     "license": "Apache-2.0",
     "scripts": {
         "build": "tsc"
@@ -22,7 +22,7 @@
     },
     "pulumi": {
         "resource": true,
-        "name": "keycloak",
-        "version": "6.0.0-alpha.0+dev"
+        "name": "natzkalabs-keycloak",
+        "server": "github://api.github.com/NatzkaLabsOpenSource/pulumi-keycloak"
     }
 }

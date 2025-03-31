@@ -29,7 +29,7 @@ import (
 	shimv2 "github.com/pulumi/pulumi-terraform-bridge/v3/pkg/tfshim/sdk-v2"
 	"github.com/pulumi/pulumi/sdk/v3/go/common/tokens"
 
-	"github.com/pulumi/pulumi-keycloak/provider/v6/pkg/version"
+	"github.com/NatzkaLabsOpenSource/pulumi-keycloak/provider/v6/pkg/version"
 )
 
 // all of the token components used below.
@@ -151,6 +151,9 @@ func Provider() tfbridge.ProviderInfo {
 				Docs: &tfbridge.DocInfo{AllowMissing: true},
 			},
 			"keycloak_openid_client_permissions": {
+				Docs: &tfbridge.DocInfo{AllowMissing: true},
+			},
+			"keycloak_realm_client_policy_profile_policy": {
 				Docs: &tfbridge.DocInfo{AllowMissing: true},
 			},
 			"keycloak_openid_audience_resolve_protocol_mapper": {
